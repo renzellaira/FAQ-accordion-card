@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope&display=swap');
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.cardContainer {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 70%;
+    height: 50%;
+}
+
+.split {
+    display: block;
+    flex: 1;
+    height: 25em;
+    width: 100%;
+}
+
+.left {
+
+    display: flex;
+}
+
+.bg-holder {
+    background-image: url(../assets/bg-pattern-desktop.svg);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position-x: 130%;
+    background-position-y: 63%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.graphic {
+    width: 100%;
+    margin-left: -26%;
+}
+
+.graphicHolder {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    margin-left: 0;
+    align-items: center;
+
+}
+
+.box {
+    position: absolute;
+    left: -10%;
+    top: 60%;
+    width: 26%;
+    transform: translate(0, -50%);
+}
+
+.right {
+    text-align: left;
+}
+
+.faqHolder {
+    padding: 5%;
+}
+
+.title {
+    font-weight: 700;
+    margin-top: 8%;
+    font-size: 1.5em;
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 376px) {
+    .cardContainer {
+        flex-direction: column;
+    }
+
+    .bg-holder {
+        background-image: url(../assets/bg-pattern-mobile.svg);
+        background-position-x: 50%;
+        background-position-y: 5%;
+        background-size: 85%;
+        height: 7em;
+        overflow: visible;
+    }
+
+    .graphicHolder {
+        overflow: visible;
+        width: 100%;
+
+    }
+
+    .graphic {
+        width: 80%;
+        margin: auto;
+
+        margin-top: -50%;
+    }
+
+    .box {
+        left: 11%;
+        top: 6%;
+        width: 25%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+}
